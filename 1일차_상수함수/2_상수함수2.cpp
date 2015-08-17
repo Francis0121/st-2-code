@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+// 핵심 : 상수 함수는 필수이다. 객체의 상태를 변경하지 않는 모든 멤버 함수는 반드시 상수함수로 만들어야 한다.
+
+// void foo( const Rect& r) 코드에서 r에 대해서 면적은 구할 수 있어여 한다.
+
 class Rect {
 	int x, y, w, h;
 public:
