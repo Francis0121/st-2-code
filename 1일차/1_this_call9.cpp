@@ -4,9 +4,20 @@ using namespace std;
 
 // callback 과 함수 포인터 문제
 class Button {
+
+	void(*handler)();
+
 public :
+
+	void setHandler(void(*f)()) {
+		handler = f;
+	}
+
 	void click() {
-		
+		// 버튼이 눌렸다는 사실을 외부에 전달합니다. 
+		// 흔히 "객체가 외부에 이벤트를 발생한다." 라고 표현.
+
+		handler();
 	}
 };
 
