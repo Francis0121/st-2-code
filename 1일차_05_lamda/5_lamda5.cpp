@@ -39,4 +39,9 @@ int main() {
 	greater_cmp f2;
 	sort(x, x + 10, f1); // sort(int*, int*, less) 함수 생성
 	sort(x, x + 10, f2); // sort(int*, int*, greater) 함수 생겅
+
+	// 3. C++11/14 람다 표현식(lamda expression)
+	// 함수 인자로 함수의 구현(코드)를 전달하는 기술
+	// [] : Lamda introducer.
+	sort(x, x + 10, [](int a, int b) { return a < b; });
 }
