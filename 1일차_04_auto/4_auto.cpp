@@ -12,4 +12,8 @@ int main() {
 
 	decltype(n1) n2; // n1의 타입으로 n2를 만들어 달라 ( 초기값이 정해지지 않아도 쓸 수 있다. )
 
+	auto n3 = foo(); // int ? int& 중 뭘까요?
+					// int
+	decltype(foo()) n4 = foo(); // ?
+								// int&
 }
