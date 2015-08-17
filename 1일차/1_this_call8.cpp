@@ -21,7 +21,7 @@ public :
 
 int main() {
 
-
+	// 가상함수의 주소를 꺼내면 진짜 주소가 아닌 가상 함수 table의 인덱스 즉, 가상함수의 순서가 나오게 된다.
 	void(Base::*f)() = &Base::foo; // 잘 생각해보세요
 	
 	// Base* p = new Base;
