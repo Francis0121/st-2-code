@@ -14,7 +14,9 @@ public:
 
 	void foo() {
 		// 멤버 변수인 base를 캡쳐 하려면?
-		auto f = [base]() { cout << base << endl; };
+		// X auto f = [base]() { cout << base << endl; };
+		auto f = [this]() { cout << base << endl; };
+		f();
 	}
 };
 
