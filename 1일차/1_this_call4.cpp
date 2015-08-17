@@ -19,6 +19,8 @@ public :
 
 	// 스레드 함수
 	// 핵심 1. C의 callback 함수는 객체 지향으로 디자인 될때 static 멤버함수가 되어야한다.
+	// 핵심 2. static 멤버에는 this 가 없음으로 가상함수나, 멤버 data에 접근 할 수 없다. 
+	//			다양한 기법으로 this를 사용할 수 있게 하는것이 편리하다.
 	static DWORD __stdcall _threadMain(void *p) {
 		// 결국 p가 this임으로 캐스팅해서 사용합니다.
 		Thread* self = static_cast<Thread*>(p);
