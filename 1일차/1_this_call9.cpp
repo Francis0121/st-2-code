@@ -5,7 +5,17 @@ using namespace std;
 // callback 과 함수 포인터 문제
 class Button {
 
+	// 일반 함수포인터만 담을 수 있다.
 	void(*handler)();
+
+	// 객체 함수 포인터를 담을 수 있다.
+	// void(Dialog::*handler)();
+	// Dialog* pDlg;
+
+	// ~ C, C++에는 일반 함수와 객체 함수 포인터를 동시에 담을 수 없다.
+
+	/*void(Dialog::*handler)();
+	Dialog* pDlg;*/
 
 public :
 
@@ -22,7 +32,7 @@ public :
 };
 
 void btn1Handler() {
-	cout << "1버튼 클릭" << endl;
+	cout << "버튼 1 클릭" << endl;
 }
 
 int main() {
