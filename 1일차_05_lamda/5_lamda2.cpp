@@ -9,7 +9,7 @@ using namespace std;
 
 void Sort(int* x, int n, bool(*cmp)(int, int)) {
 	for (int i = 0; i < n - 1; i++) {
-		for (int j = j + 1; j < n; j++) {
+		for (int j = i + 1; j < n; j++) {
 			// if (x[i] > x[j])
 			if(cmp(x[i], x[j]))
 				swap(x[i], x[j]);
@@ -17,6 +17,18 @@ void Sort(int* x, int n, bool(*cmp)(int, int)) {
 	}
 }
 
-int main() {
+// Sort() 사용자는 비교 함수를 전달해야 한다.
+bool cmp1(int a, int b) {
+	return a < b;
+}
 
+bool cmp2(int a, int b) {
+	return a > b;
+}
+
+int main() {
+	int x[10] = { 1,3,5,7,9, 2,4,6,8,10 };
+	// 동일한 함수를 다른 정책으로 사용할 수 있게 되었다.
+	Sort(x, 10, cmp1);
+	Sort(x, 10, cmp2);
 }
