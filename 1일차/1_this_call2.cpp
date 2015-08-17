@@ -6,6 +6,12 @@ using namespace std;
 
 //	2.	일반 함수 포인터에 static 멤버 함수의 주소를 담을 수 있다.
 
+//	3.	멤버 함수 포인터를 만들고 사용하는 방법
+//		void(Dialog::*f)() = &Dialog::Close;
+
+//		Dialog dlg;
+//		(dlg.*f3)();
+
 class Dialog {
 public :
 	void Close() {
