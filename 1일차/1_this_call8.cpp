@@ -3,9 +3,8 @@ using namespace std;
 
 class Base {
 public:
-	virtual void foo() {
-		cout << "Base foo" << endl;
-	}
+	// 순수 가상 함수로 구현 되도 무관하다.
+	virtual void foo() = 0; //  { cout << "Base foo" << endl; }
 };
 
 class Derived : public Base {
