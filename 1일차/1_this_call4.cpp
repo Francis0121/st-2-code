@@ -10,11 +10,13 @@ using namespace std;
 class Thread {
 public : 
 	void Create() {
-		CreateThread(0, 0, _threadMain, 0, 0, 0);
+		// CreateThread 인 함수는 반드시 parameter 가 하나여야한다.
+		CreateThread(0, 0, _threadMain, 0, 0, 0); // !! Error
 	}
 
 	// 스레드 함수
-	DWORD __stdcall _threadMain(void *p) {
+	// 핵심 1. C의 callback 함수는 객체 지향으로 디자인 될때 static 멤버함수가 되어야한다.
+	static DWORD __stdcall _threadMain(void *p) {
 		threadMain();
 		return 0;
 	}
