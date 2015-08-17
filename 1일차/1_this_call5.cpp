@@ -18,6 +18,12 @@ public:
 		cout << "f3" << endl;
 		return data; // compile -> this->data;
 	}
+
+	// 아래코드를 만드는 이유는?
+	// NULL 객체에 대해서 함수를 호출해도 죽지 않게 하기 위해서
+	int call_f3() {
+		return this ? f3() : 0;
+	}
 };
 
 int main() {
@@ -28,4 +34,6 @@ int main() {
 			// f2(p), f2(0);
 	p->f3(); // ? "f3"까지 찍고 data의 멤버 변수가 this 콜이 되지 않기 때문에 프로그램이 죽는다
 			// f3(p), f3(0); 
+	p->call_f3(); // 최소한의 방어를 위한 코드
+				// this 가 NULL 일 경우에 f3()함수를 콜하지 못하도록 하고 0을 리턴 하도록 한다.
 }
