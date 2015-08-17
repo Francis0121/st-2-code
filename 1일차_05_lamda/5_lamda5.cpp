@@ -15,6 +15,8 @@ int main() {
 
 	// sort의 모든 인자는 템플릿 입니다.
 	// 1. 비교정책으로 일반 함수를 사용하는 경우
-	sort(x, x + 10, cmp1);
-	sort(x, x + 10, cmp2);
+	// 장점 : 정책을 여러번 교체 해도 sort() 기계어는 한개이다.메모리 사용량 감소
+	// 단점 : 정책이 인라인 치환될 수 없기 때문에 성능 저하가 있다.
+	sort(x, x + 10, cmp1); // sort(int* ,int* , bool(*)(int,int)) 함수 생성
+	sort(x, x + 10, cmp2); // sort(int* ,int* , bool(*)(int,int)) 함수 생성
 }
