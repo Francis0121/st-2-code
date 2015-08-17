@@ -7,6 +7,8 @@ using namespace std;
 
 // 일반 함수는 변하는 부분을 함수 인자화 한다.(함수 포인터)
 
+// C 표준 함수인 qsort()가 아래 모양이다.
+// 핵심은 "알고리즘 정책의 분리" 이다.
 void Sort(int* x, int n, bool(*cmp)(int, int)) {
 	for (int i = 0; i < n - 1; i++) {
 		for (int j = i + 1; j < n; j++) {
