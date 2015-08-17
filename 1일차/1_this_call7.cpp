@@ -5,7 +5,7 @@ class X {
 public:
 	int x;
 	void fx() {
-		cout << this << endl;
+		cout << this << endl; // 100
 	}
 };
 
@@ -31,8 +31,22 @@ int main() {
 	C ccc;
 	cout << &ccc << endl; // 100번지라고 할때
 
-	ccc.fx();
-	ccc.fy();
+	ccc.fx(); // 100
+	ccc.fy(); // 104
+
+	void(C::*f)(); // 함수포인터 4바이트 아닐수 도있다.
+					// 다중 함수 포인터는 8 바이트 이다.
+					// { 함수주소, this offset }
+
+	// f = &C::fx; // f = { fx주소, 0 }
+	// (ccc.*f)(); // 결과 ? 100 나와야 한다.
+				// f(&ccc);
+
+	f = &C::fy;
+	(ccc.*f)(); // 결과 ? 104 나와야 한다.
+				// f(&ccc);
+
+	cout << "" << endl;
 
 	X* pX = &ccc;
 	Y* pY = &ccc;
