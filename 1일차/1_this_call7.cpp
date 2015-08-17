@@ -42,15 +42,11 @@ int main() {
 	// (ccc.*f)(); // 결과 ? 100 나와야 한다.
 				// f(&ccc);
 
-	f = &C::fy;
+	f = &C::fy; // f = { fy주소, sizeof(X) 즉 4 }
 	(ccc.*f)(); // 결과 ? 104 나와야 한다.
-				// f(&ccc);
+				// f(&ccc); X
+				// f.함수주소(&ccc + f.this_offset)
 
-	cout << "" << endl;
+	cout << sizeof(f) << endl;
 
-	X* pX = &ccc;
-	Y* pY = &ccc;
-
-	cout << pX << endl;  // ? 100
-	cout << pY << endl;  // ? 104
 }
