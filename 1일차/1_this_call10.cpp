@@ -9,10 +9,12 @@ using namespace std;
 // C++11 : fucntion<> 모든 함수의 주소를 담을 수 있다.
 
 class Dialog {
+
 public:
 	void Close() {
 		cout << "Dialog Close" << endl;
 	}
+
 };
 
 void foo() {
@@ -27,18 +29,21 @@ void hoo(int a, int b) {
 	cout << "hoo : " << a << b << endl;
 }
 
+// fuction<ReturnType(Parameter)>
 #include <functional>
 
 int main() {
 	function<void()> f = &foo;
 	f(); // ok .. foo()호출
 
-	//f = &goo;
-	//f();
+	f = bind(&goo, 5);
+	f(); // goo(5)B
 
-	//f = &hoo;
-	//f();
+	Dialog dlg;
+	f = bind(&Dialog::Close, dlg);
+	f();
 
-	//f = &Dialog::Close();
-	//f();
+	f = bind(&hoo, 1, 2);
+	f();
+
 }
