@@ -24,6 +24,8 @@ public:
 //	return p;
 //}
 
+/
+
 
 int main() {
 	Point p;
