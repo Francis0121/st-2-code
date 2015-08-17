@@ -24,5 +24,8 @@
     <ClCompile Include="2_상수함수3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2_상수함수4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
