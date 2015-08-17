@@ -6,7 +6,7 @@
 //		객체가 함수의 1번째 인자(this)로 추가된다. - this call
 //		정확히는 ecx 레지스터로 전달
 
-//	2.	
+//	2.	static 멤버 함수는 this가 추가되지 않는다. !!
 
 using namespace std;
 
