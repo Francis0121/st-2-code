@@ -49,4 +49,5 @@ public:
 int main() {
 	MyThread t;
 	t.Create();	// 이 순간 스레드가 생성되어서 threadMain 을 수행해야 합니다.
+	_getch();
 }
