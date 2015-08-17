@@ -11,6 +11,7 @@ DWORD __stdcall foo(void *p) {
 }
 
 int main() {
-	CreateThread(0, 0, foo, "A", 0 0); // 스레드를 만드는 함수
+	CreateThread(0, 0, foo, "A", 0, 0); // 스레드를 만드는 함수
+										// 리눅스 pthread_create();
 	_getch();
 }
