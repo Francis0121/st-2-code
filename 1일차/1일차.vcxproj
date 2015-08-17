@@ -89,7 +89,10 @@
     <ClCompile Include="1_this_call3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1_this_call4.cpp" />
+    <ClCompile Include="1_this_call4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1_this_call5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\.gitignore" />
