@@ -18,5 +18,11 @@
     <ClCompile Include="상수.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="상수2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="상수3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
