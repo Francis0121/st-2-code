@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_02_상수함수", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_03_상수", "1일차_상수\1일차_상수.vcxproj", "{7E89E08E-5157-47FB-9CFC-93247108A5EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_04_auto", "1일차_04_auto\1일차_04_auto.vcxproj", "{F6B65C5A-95B3-4324-8A97-D0E4E06D4177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -27,6 +29,10 @@ Global
 		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Debug|x86.Build.0 = Debug|Win32
 		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Release|x86.ActiveCfg = Release|Win32
 		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Release|x86.Build.0 = Release|Win32
+		{F6B65C5A-95B3-4324-8A97-D0E4E06D4177}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6B65C5A-95B3-4324-8A97-D0E4E06D4177}.Debug|x86.Build.0 = Debug|Win32
+		{F6B65C5A-95B3-4324-8A97-D0E4E06D4177}.Release|x86.ActiveCfg = Release|Win32
+		{F6B65C5A-95B3-4324-8A97-D0E4E06D4177}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
