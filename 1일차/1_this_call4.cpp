@@ -17,11 +17,12 @@ public :
 	// 스레드 함수
 	// 핵심 1. C의 callback 함수는 객체 지향으로 디자인 될때 static 멤버함수가 되어야한다.
 	static DWORD __stdcall _threadMain(void *p) {
-		threadMain();
+		threadMain();	// compile -> this->threadMain()
+						// 즉 threadMain(this)가 되어야 한다.
 		return 0;
 	}
 
-	virtual void threadMain() {
+	virtual void threadMain() { // compile -> threadMain(Thread *this)
 
 	}
 };
