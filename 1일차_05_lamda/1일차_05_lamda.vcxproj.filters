@@ -51,5 +51,8 @@
     <ClCompile Include="5_lamda12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="5_lamda13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
