@@ -30,6 +30,9 @@
     <ClCompile Include="1_this_call5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1_this_call6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\.gitignore" />
