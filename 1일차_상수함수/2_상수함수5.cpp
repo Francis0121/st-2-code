@@ -6,8 +6,8 @@ using namespace std;
 
 class Point {
 	int x, y;
-	mutable char cache[32];
-	mutable bool cache_valid; // 상수 함수에서도 변경가능한 멤버 변수로 적용 mutable (keyword)
+	char cache[32];
+	bool cache_valid; // 상수 함수에서도 변경가능한 멤버 변수로 적용 mutable (keyword)
 
 public:
 	Point(int a = 0, int b = 0) : x(a), y(b), cache_valid(false) {}
