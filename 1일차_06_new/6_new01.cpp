@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+// 1. new 의 정확한 동작방식
+//	(A) operator new() 함수를 사용해서 메모리 할당
+//	(B) (A)가 성공하고 객체라면 생성자 호출
+//	(C) 메모리 주소를 해당 타입으로 캐스팅해서 리턴
 class Point {
 	int x, y;
 
@@ -15,6 +19,10 @@ public:
 };
 
 int main() {
-	Point* p = new Point;
-	delete p;
+	// 생성자 호출없이 메모리 할당만 하는 방법
+	Point* p = static_cast<Point*>(operator new(sizeof(Point)));
+	operator delete(p);
+
+	// Point* p = new Point;
+	// delete p;
 }
