@@ -10,13 +10,21 @@ using namespace std;
 class Thread {
 public : 
 	void Create() {
-
+		CreateThread(0, 0, _threadMain, 0, 0, 0);
 	}
+
+	// 스레드 함수
+	DWORD __stdcall _threadMain(void *p) {
+		threadMain();
+		return 0;
+	}
+
 	virtual void threadMain() {
 
 	}
 };
 
+// 빌드하면 에러가 발생합니다... 왜 에러 일까요?
 
 // 아래 클래스가 라이브러리 사용자 클래스 입니다.
 class MyThread : public Thread {
