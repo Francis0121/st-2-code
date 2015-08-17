@@ -14,7 +14,7 @@
     <ProjectGuid>{C8C8CF90-680B-40E3-9844-3CB301FC9080}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My1일차</RootNamespace>
-    <ProjectName>1일차_thiscall</ProjectName>
+    <ProjectName>1일차_01_thiscall</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

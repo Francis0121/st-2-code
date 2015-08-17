@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_thiscall", "1일차\1일차.vcxproj", "{C8C8CF90-680B-40E3-9844-3CB301FC9080}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_01_thiscall", "1일차\1일차.vcxproj", "{C8C8CF90-680B-40E3-9844-3CB301FC9080}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_상수함수", "1일차_상수함수\1일차_상수함수.vcxproj", "{CA3EEC4E-5BDF-4E25-8A39-EB7B129D73AB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_02_상수함수", "1일차_상수함수\1일차_상수함수.vcxproj", "{CA3EEC4E-5BDF-4E25-8A39-EB7B129D73AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1일차_03_상수", "1일차_상수\1일차_상수.vcxproj", "{7E89E08E-5157-47FB-9CFC-93247108A5EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CA3EEC4E-5BDF-4E25-8A39-EB7B129D73AB}.Debug|x86.Build.0 = Debug|Win32
 		{CA3EEC4E-5BDF-4E25-8A39-EB7B129D73AB}.Release|x86.ActiveCfg = Release|Win32
 		{CA3EEC4E-5BDF-4E25-8A39-EB7B129D73AB}.Release|x86.Build.0 = Release|Win32
+		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Debug|x86.Build.0 = Debug|Win32
+		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Release|x86.ActiveCfg = Release|Win32
+		{7E89E08E-5157-47FB-9CFC-93247108A5EF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

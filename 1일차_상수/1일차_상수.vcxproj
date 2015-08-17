@@ -14,6 +14,7 @@
     <ProjectGuid>{7E89E08E-5157-47FB-9CFC-93247108A5EF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My1일차_상수</RootNamespace>
+    <ProjectName>1일차_03_상수</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -80,6 +81,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="상수.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
