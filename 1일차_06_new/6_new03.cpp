@@ -16,9 +16,14 @@ public:
 };
 
 // 아래 함수가 어렵습니다. - 잘 생각해 보세요
-void* operator new (size_t sz, Point *p){
-	return p;
-}
+//void* operator new (size_t sz, Point *p){
+//	return p;
+//}
+// -----> 해당 함수는 C++ 표준이다.
+//void* operator new (size_t sz, void *p){
+//	return p;
+//}
+
 
 int main() {
 	Point p;
