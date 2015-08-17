@@ -10,8 +10,8 @@ inline int Add2(int a, int b) {
 }
 
 int main() {
-	int n1 = Add1(1, 2);
-	int n2 = Add2(1, 2);
+	int n1 = Add1(1, 2); // 호출
+	int n2 = Add2(1, 2); // 기계어 코드 치환 - 속도가 빨라진다.
 
 	int(*f)(int, int);
 
