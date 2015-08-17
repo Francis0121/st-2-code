@@ -8,6 +8,13 @@ using namespace std;
 
 // C++11 : fucntion<> 모든 함수의 주소를 담을 수 있다.
 
+class Dialog {
+public:
+	void Close() {
+		cout << "Dialog Close" << endl;
+	}
+};
+
 void foo() {
 	cout << "foo" << endl;
 }
