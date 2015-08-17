@@ -5,6 +5,10 @@ using namespace std;
 //	(A) operator new() 함수를 사용해서 메모리 할당
 //	(B) (A)가 성공하고 객체라면 생성자 호출
 //	(C) 메모리 주소를 해당 타입으로 캐스팅해서 리턴
+
+
+// 2. new와 operator new()는 다른 요소이다.
+
 class Point {
 	int x, y;
 
