@@ -28,4 +28,18 @@ int main() {
 		p3[i].~Point(); // 소멸자 명시적 호출
 	}
 	operator delete(p3);
+
+	// Point를 스택에 10개 만들어 보세요.
+	// Point p4[10]; // Default 생성자가 없어서 해당 구문으로 생성할수 없다.
+
+	char buf[sizeof(Point) * 10];
+	
+	// 안됨 Point* p4 = static_cast<Point*>(&buf);
+	Point* p4 = reinterpret_cast<Point*>(&buf);
+	 
+	// static_cast 차이점이존재 reinterpret_cast
+
+	// p4에 대해 생성자를 명시적으로 호출하고 사용하면 된다.
+
+	// 사용후 소멸
 }
