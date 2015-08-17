@@ -9,6 +9,10 @@ using namespace std;
 
 // C 표준 함수인 qsort()가 아래 모양이다.
 // 핵심은 "알고리즘 정책의 분리" 이다.
+
+// 장점 : 함구가 사용하는 정책을 사용자가 변경할 수 있다.
+// 단점 : 결국 callback 함수를 사용하게 됨으로 느리다. 정책 함수를 인라인으로 만들어오 인라인 치환 될 수 없다.
+
 void Sort(int* x, int n, bool(*cmp)(int, int)) {
 	for (int i = 0; i < n - 1; i++) {
 		for (int j = i + 1; j < n; j++) {
