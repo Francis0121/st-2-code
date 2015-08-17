@@ -15,8 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="2_상수함수2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="2_상수함수.cpp">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
