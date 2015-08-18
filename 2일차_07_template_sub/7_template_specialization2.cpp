@@ -36,4 +36,15 @@ int main() {
 
 	// int a = 5;
 	// int n2 = Factorial<a>::value; // 불가능! 템플릿 인자는 컴파일 시간 상수만 가능.
+
+	// 숙제 1. binary<> 만들어 보세요
+	int n3 = binary<101>::value;
+	cout << n3 << endl; // 5나와야 합니다.
+
+	// 숙제 2. 아래 코드가 컴파일 에러 나오게 해보세요.
+	int n4 = binary<201>::value;
 }
+
+// 어제 숙제와 함꼐
+// smkang @ ioacademy.co.kr로 보내주세요.
+// 기한은 없음
