@@ -47,6 +47,8 @@ using namespace std;
 int main() {
 	//stack<int>	st;
 	// 사용자에게 list, vector에 대한 권한 넘겨준다.
+
+	// 숙제 3. queue adpater를 만들어보세요.
 	stack<int> st;
 	stack<int, list<int>> st2; // list<int>를 stack으로 바꿔달라
 	stack<int, vector<int>> st3;

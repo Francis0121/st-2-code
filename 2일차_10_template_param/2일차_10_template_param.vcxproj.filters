@@ -24,5 +24,8 @@
     <ClCompile Include="10_template_param3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="10_template_param4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
