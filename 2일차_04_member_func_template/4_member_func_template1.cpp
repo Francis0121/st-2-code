@@ -23,6 +23,11 @@ public:
 	template<typename U> complex(const complex<U>& c);
 };
 
+// 일반화된 복사 생성자의 외부 구현
+template<typename T> template<typename U> complex<T>::complex(const complex<U>& c) : re(c.re), im(c.im) {
+
+}
+
 int main() {
 	complex<int> c1(1, 2);
 	complex<int> c2 = c1; // 복사 생성자 사용 - Default 복사 생성자 
