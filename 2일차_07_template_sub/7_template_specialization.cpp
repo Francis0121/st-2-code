@@ -1,4 +1,5 @@
 // 7_템플릿 부분 전문화 - 아주 중요합니다!!! 오늘의 핵심
+// 의도 specialization 는 특정 부분에 대해서 다른 것을 쓰도록 하겠다.
 
 #include <iostream>
 using namespace std;
