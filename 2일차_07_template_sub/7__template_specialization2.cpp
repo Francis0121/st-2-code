@@ -33,4 +33,7 @@ int main() {
 
 			// compile -> 120으로 고정됨.( Runtime 실행시가 아니라 Compile 시) -> 따라서 목적 코드에 120이 고정된다.
 	cout << n << endl;
+
+	// int a = 5;
+	// int n2 = Factorial<a>::value; // 불가능! 템플릿 인자는 컴파일 시간 상수만 가능.
 }
