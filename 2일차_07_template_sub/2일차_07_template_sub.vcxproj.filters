@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7_template_sub.cpp">
+    <ClCompile Include="7_template_specialization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_template_specialization2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_template_specialization3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
