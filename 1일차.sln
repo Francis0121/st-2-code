@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_08_traits", "2일�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_09_trivial", "2일차_09_trivial\2일차_09_trivial.vcxproj", "{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_10_template_param", "2일차_10_template_param\2일차_10_template_param.vcxproj", "{DA9DABBD-F7CE-4FD1-AAC4-950A0CE44BA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -99,6 +101,10 @@ Global
 		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Debug|x86.Build.0 = Debug|Win32
 		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Release|x86.ActiveCfg = Release|Win32
 		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Release|x86.Build.0 = Release|Win32
+		{DA9DABBD-F7CE-4FD1-AAC4-950A0CE44BA5}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA9DABBD-F7CE-4FD1-AAC4-950A0CE44BA5}.Debug|x86.Build.0 = Debug|Win32
+		{DA9DABBD-F7CE-4FD1-AAC4-950A0CE44BA5}.Release|x86.ActiveCfg = Release|Win32
+		{DA9DABBD-F7CE-4FD1-AAC4-950A0CE44BA5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

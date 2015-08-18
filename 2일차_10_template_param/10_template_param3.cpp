@@ -2,6 +2,7 @@
 
 // 이미 C++ 표준에 list가 있습니다.
 #include <list>
+#include <vector>
 using namespace std;
 
 // 그런데 stack 이 필요합니다.
@@ -24,10 +25,10 @@ using namespace std;
 //};
 
 // S/W 재사용은 상속 vs 포함이 있다. 포함이 좋은 경우가 더 많다.
-template<typename T> class stack{
-	list<T> st;
+template<typename T, typename C = deque<T>> class stack{
+	C st;
 public:
-	inline void push(cosnt T& a) {
+	inline void push(const T& a) {
 		st.push_back(a);
 	}
 	inline void pop() {
@@ -40,7 +41,11 @@ public:
 
 
 int main() {
-	stack<int>	st;
+	//stack<int>	st;
+	// 사용자에게 list, vector에 대한 권한 넘겨준다.
+	stack<int> st;
+	stack<int, list<int>> st2; // list<int>를 stack으로 바꿔달라
+	stack<int, vector<int>> st3;
 	st.push(10);
 	// st.push_front(20); // 사용자가 실 수 했다.
 }
