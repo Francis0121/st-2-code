@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// C++ idioms 검색후 첫번째 링크
+
 // 0, 1 로 함수 오버로딩이 되게 하는 기술
 
 // 모든 int형 상수를 타입으로 만드는 시스템
