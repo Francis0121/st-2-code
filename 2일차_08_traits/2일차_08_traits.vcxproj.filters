@@ -24,5 +24,11 @@
     <ClCompile Include="8_traits3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_traits4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8_traits5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
