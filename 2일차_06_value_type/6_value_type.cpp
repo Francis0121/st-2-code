@@ -3,24 +3,50 @@
 #include <list>
 using namespace std;
 
+// Step01
 //void print(vector<int>& v) {
 //	int n = v.front();
 //	cout << n << endl;
 //}
 
+
+// Step02
 //template<typename T> 
 //void print(vector<T>& v) {
 //	T n = v.front();
 //	cout << n << endl;
 //}
 
+
+
+// Step03
+// core/include/utils/vector.h 열어 보세요
+/*
+template <class TYPE>
+class Vector : private VectorImpl
+{
+public:
+	typedef TYPE    value_type;
+*/
+
+//template<typename T>
+//void print(T& v) {
+//	// T			  => list<double>
+//	// T::value_type  => double
+//	typename T::value_type n = v.front();
+//	cout << n << endl;
+//}
+
+
+
+// Step04 - auto !!!!
 template<typename T>
 void print(T& v) {
-	// T : list<double>
-	T::value_type n = v.front();
+	// C++11의 도입은 기존 소스를 보다 간단하게 표현 할 수 있습니다.
+	// 결국 value_type 개념이 없어도 됩니다.
+	auto n = v.front();
 	cout << n << endl;
 }
-
 
 int main() {
 	// 1. vector<int> v(10, 3);
