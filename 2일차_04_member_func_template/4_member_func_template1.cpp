@@ -16,8 +16,15 @@ template<typename T> class complex {
 public:
 	complex(T r = T(), T i = T()) : re(r), im(i){ }
 
+	// 일반화된(generic) 복사 생성자
+	// U가 T로 복사(대입) 될 수 있다면
+	// complex<U>는 complex<T>로 복사(대입) 될 수 있어야 한다.
+	// => 일반화된 복사 생성자(대입 연산자)가 필요하다.
+	template<typename U> complex(const complex<U>& c);
 };
 
 int main() {
-	complex<int> c(1.1, 2.2);
+	complex<int> c1(1, 2);
+	complex<int> c2 = c1; // 복사 생성자 사용 - Default 복사 생성자 
+	complex<double> c3 = c1;
 }
