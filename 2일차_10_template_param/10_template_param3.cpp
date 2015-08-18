@@ -2,7 +2,6 @@
 
 // 이미 C++ 표준에 list가 있습니다.
 #include <list>
-#include <vector>
 using namespace std;
 
 // 그런데 stack 이 필요합니다.
@@ -24,21 +23,26 @@ using namespace std;
 //	}
 //};
 
-// S/W 재사용은 상속 vs 포함이 있다. 포함이 좋은 경우가 더 많다.
-template<typename T, typename C = deque<T>> class stack{
-	C st;
-public:
-	inline void push(const T& a) {
-		st.push_back(a);
-	}
-	inline void pop() {
-		st.pop_back();
-	}
-	inline T& top() {
-		return st.back();
-	}
-};
+// S/W 재사용은 상속 vs 포함이 있다. 포함이 좋은 경우가 더 많다.7
 
+//template<typename T, typename C = deque<T>> class stack{
+//	C st;
+//public:
+//	inline void push(const T& a) {
+//		st.push_back(a);
+//	}
+//	inline void pop() {
+//		st.pop_back();
+//	}
+//	inline T& top() {
+//		return st.back();
+//	}
+//};
+
+
+#include <vector>
+#include <deque>
+#include <stack> // 이 헤더에 위의 코드가 있습니다.
 
 int main() {
 	//stack<int>	st;
