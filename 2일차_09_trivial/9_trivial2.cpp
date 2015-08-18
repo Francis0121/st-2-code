@@ -2,8 +2,10 @@
 #include <type_traits>
 using namespace std;
 
+// kitkat 소수중 core/include/utils/typeHelpers.h를 열어보세요
+
 // 모든 타입의 배열을 복사 하는 strcpy()의 일반화 버전을 만들어봅시다.
-template<typename T> void copy_type(T* d, T*s, int sz) {
+template<typename T> inline void copy_type(T* d, T*s, int sz) {
 
 	if (!is_trivially_copyable<T>::value) {
 		cout << " 복사 생성자가 하는 일이 있을 때 " << endl;
