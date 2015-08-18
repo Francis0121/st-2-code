@@ -21,10 +21,15 @@ public:
 	// complex<U>는 complex<T>로 복사(대입) 될 수 있어야 한다.
 	// => 일반화된 복사 생성자(대입 연산자)가 필요하다.
 	template<typename U> complex(const complex<U>& c);
+
+	// 모든 타입의 complex 들은 서로 private 접근 가능하게 해야 한다.
+	// friend void foo() ; // friend 함수
+	template<typename U> friend class complex;
 };
 
 // 일반화된 복사 생성자의 외부 구현
-template<typename T> template<typename U> complex<T>::complex(const complex<U>& c) : re(c.re), im(c.im) {
+template<typename T> template<typename U> 
+complex<T>::complex(const complex<U>& c) : re(c.re), im(c.im) {
 
 }
 
