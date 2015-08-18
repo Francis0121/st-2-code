@@ -27,5 +27,17 @@
     <ClCompile Include="7_template_specialization4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="7_template_specialization5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_template_specialization6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_template_specialization7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_tempalte_specialization8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
