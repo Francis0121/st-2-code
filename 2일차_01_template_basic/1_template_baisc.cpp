@@ -31,4 +31,11 @@ template<typename T> T square(T a){return a * a;}
 int main() {
 	square(3); // compile -> int square(int a){return a * a;}
 	square(3.3); // compile -> double square(double a){return a * a;}
+
+	short s = 3;
+	square(s);	// 1. int 버전 사용 2. short 버전 생성.
+				// 2. short 버전을 생성해준다.
+	
+	square<int>(s); // 사용자가 T 의 타입을 전달 - int 버전을 사용해 달라.
+
 }
