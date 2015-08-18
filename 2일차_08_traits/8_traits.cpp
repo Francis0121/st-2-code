@@ -1,9 +1,17 @@
 #include <iostream>
 using namespace std;
 
+//template<typename T> void printv(T a) {
+//	cout << a << endl;
+//}
+
 template<typename T> void printv(T a) {
-	cout << a << endl;
+	if (T is Pointer)
+		cout << a << ", " << *a << endl;
+	else
+		cout << a << endl;
 }
+
 
 int main() {
 	int n = 3;
