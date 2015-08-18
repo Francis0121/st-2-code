@@ -8,15 +8,17 @@ using namespace std;
 // 1. stack 다시 만들자
 // 2. list를 재 사용하자.
 
+// Adapter 디자인 패턴 : 기존 클래스의 인터페이스 (함수 이름)을 변경해서 클라이언트가 요구하는 새로운 클래스를 만드는 패턴 
+//						C++은 템플릿과 인라인으로 성능저하없이 만들수도 있다.
 template<typename T> class stack : public list<T> {
 public:
-	void push(cosnt T& a) {
+	inline void push(cosnt T& a) {
 		list<T>::push_back(a);
 	}
-	void pop() {
+	inline void pop() {
 		list<T>::pop_back();
 	}
-	T& top() {
+	inline T& top() {
 		return list<T>::back();
 	}
 };
