@@ -2,6 +2,11 @@
 using namespace std;
 
 // 0, 1 로 함수 오버로딩이 되게 하는 기술
+
+// 모든 int형 상수를 타입으로 만드는 시스템
+// Modern C++의 저자인 Andrie Alexandr... 가 2000년도에 만든 기술
+
+// 컴파일 시간 결정된 모든 상수는 함수 오버로딩에 활용될 수 있다.
 template<int N> struct int2type {
 	enum { value = N };
 };
