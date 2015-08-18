@@ -18,5 +18,8 @@
     <ClCompile Include="4_member_func_template1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="4_member_func_template2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
