@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_07_template_special
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_08_traits", "2일차_08_traits\2일차_08_traits.vcxproj", "{ED409DB8-3D2C-4A01-9C91-0037B2C09283}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2일차_09_trivial", "2일차_09_trivial\2일차_09_trivial.vcxproj", "{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -93,6 +95,10 @@ Global
 		{ED409DB8-3D2C-4A01-9C91-0037B2C09283}.Debug|x86.Build.0 = Debug|Win32
 		{ED409DB8-3D2C-4A01-9C91-0037B2C09283}.Release|x86.ActiveCfg = Release|Win32
 		{ED409DB8-3D2C-4A01-9C91-0037B2C09283}.Release|x86.Build.0 = Release|Win32
+		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Debug|x86.ActiveCfg = Debug|Win32
+		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Debug|x86.Build.0 = Debug|Win32
+		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Release|x86.ActiveCfg = Release|Win32
+		{8AEA1C39-A36F-4899-83F2-9CCFC790CB53}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
