@@ -18,5 +18,8 @@
     <ClCompile Include="1_variadic_template1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1_variadic_template2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
