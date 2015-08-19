@@ -18,5 +18,8 @@
     <ClCompile Include="5_casting1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="5_casting2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
