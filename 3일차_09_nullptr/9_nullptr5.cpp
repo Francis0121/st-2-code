@@ -13,6 +13,10 @@ void hoo(int a, int b) {
 	cout << "hoo" << endl;
 }
 
+void koo() {
+	cout << "koo" << endl;
+}
+
 // 함수가 수행되는시간을 확인하는 도구를 만들어 봅시다.
 template<typename F, typename ... Types>
 void HowLong(F f, Types ... args) {
@@ -29,4 +33,5 @@ int main() {
 	//HowLong(goo, 0);
 	HowLong(goo, nullptr);
 	HowLong(hoo, 1, 2);
+	HowLong(koo);
 }
