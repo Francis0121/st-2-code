@@ -11,15 +11,10 @@ public:
 	}
 	~Cat() { delete[] name; }
 
-	// 소유권 이전의 복사 생성자 - 어렵고 중요한 개념입니다.
-	// Move 생성자라고 부르는 개념.
-	Cat(Cat&c) {// 주의 !! const가 없습니다.
-
-		// 1. 얕은 복사후에
+	Cat(Cat&c) {
 		name = c.name;
 		age = c.age;
 
-		// 2. 원본을 0으로
 		c.name = 0;
 		c.age = 0;
 	}
