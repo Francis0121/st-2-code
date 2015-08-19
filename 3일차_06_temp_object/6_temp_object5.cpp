@@ -24,6 +24,12 @@ public:
 	T& top() { return buff[index]; } // 리터만
 };
 
+// C++ 에서 template 기반의 컨테이너(list, stack, vector 등)의
+// 모든 함수는 제거와 리턴을 동시에 하지 않는다.
+
+// 1. 참조리턴을 통한 임시객체를 제거하기 위해
+// 2. 예외 안전성의 강력보장을 위해
+
 int main() {
 	Stack<int> s;
 	s.push(10);
