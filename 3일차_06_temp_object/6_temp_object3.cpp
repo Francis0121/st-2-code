@@ -20,13 +20,14 @@ public:
 };
 
 // 함수 인자와 임시객체
-void foo(Point p){}
+Point foo() {
+	Point p2;
+	return p2;
+}
 
 int main() {
-	Point p;
-	foo(p);
-
-	// 값 타입의 함수 인자로 전달하기 위한 객체라면 임시 객체가 좋다.
-	foo(Point());
-
+	Point p1;
+	cout << "AAA" << endl;
+	p1 = foo();
+	cout << "BBB" << endl;
 }
