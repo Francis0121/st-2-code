@@ -7,7 +7,8 @@ using namespace std;
 //
 // reinterpret_cast : 메모리의 재해석, 대부분 성공.
 // 
-// const_cast :
+// const_cast : 객체의 상수성 제거
+//
 // dynamic_cast :
 
 int main() {
