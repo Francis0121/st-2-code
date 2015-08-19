@@ -1,8 +1,11 @@
 // 3 단위 전략
-template<typename T> class List {
+template<typename T, typename ThreadModel> 
+class List  : public ThreadModel{
 public:
 	void push_front(const T& a) {
-
+		Lock();
+		// ... 
+		Unlock();
 	}
 };
 
