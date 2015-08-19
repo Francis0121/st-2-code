@@ -15,14 +15,12 @@ void goo(char* p) {
 	cout << "char*" << endl; //3
 }
 
-// C/C++ 간의 차이점 때문에 NULL 은 아래처럼 만들어져 있습니다.
-//#ifdef __cplusplus
-//	#define NULL 0
-//#else
-//	#define NULL (void*)0
-//#endif
-
 int main() {
-	goo(NULL);
-	foo(NULL); // int
+	int* p = nullptr; // 포인터 0을 나타내는 상수
+	char* p2 = nullptr;
+
+	//int n = nullptr; // error .. 포인터 0이지 정수 0이 아니다.
+
+	foo(nullptr);
+	goo(nullptr);
 }
