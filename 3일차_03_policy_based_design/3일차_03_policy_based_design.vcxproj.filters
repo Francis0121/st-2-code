@@ -24,5 +24,8 @@
     <ClCompile Include="3_policy_based_design3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3_policy_based_design4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
