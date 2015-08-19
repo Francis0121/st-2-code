@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_07_rvalue", "3일�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_08_object_copy", "3일차_08_object_copy\3일차_08_object_copy.vcxproj", "{CFA80601-4BFC-415A-BF85-579DD8AC7148}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_09_nullptr", "3일차_09_nullptr\3일차_09_nullptr.vcxproj", "{77869683-3F26-4826-872E-FD1B54EEA9B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -159,6 +161,10 @@ Global
 		{CFA80601-4BFC-415A-BF85-579DD8AC7148}.Debug|x86.Build.0 = Debug|Win32
 		{CFA80601-4BFC-415A-BF85-579DD8AC7148}.Release|x86.ActiveCfg = Release|Win32
 		{CFA80601-4BFC-415A-BF85-579DD8AC7148}.Release|x86.Build.0 = Release|Win32
+		{77869683-3F26-4826-872E-FD1B54EEA9B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{77869683-3F26-4826-872E-FD1B54EEA9B7}.Debug|x86.Build.0 = Debug|Win32
+		{77869683-3F26-4826-872E-FD1B54EEA9B7}.Release|x86.ActiveCfg = Release|Win32
+		{77869683-3F26-4826-872E-FD1B54EEA9B7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
