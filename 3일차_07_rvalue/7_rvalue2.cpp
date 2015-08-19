@@ -15,5 +15,9 @@ int main() {
 
 	Point p2;
 	Point& r3 = p2; // ok  
-	Point& r4 = foo(); // error 임시객체는 rvalue 이다.
+	// Point& r4 = foo(); // error 임시객체는 rvalue 이다.
+
+	// const & 는 rvalue를 가르킬 수 있다.
+	const int& r5 = 10; // ok
+	const Point& r6 = foo(); // ok
 }
