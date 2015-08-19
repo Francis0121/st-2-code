@@ -67,4 +67,7 @@ int main() {
 	xtuple<int, char, double, short> t4(1, 'c', 3.3, 4);
 
 	print_type<1>(t4);
+	
+	// ¼÷Á¦ ..
+	cout << xget<1>(t4) << endl;
 }
