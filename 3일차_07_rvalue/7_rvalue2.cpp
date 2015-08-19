@@ -1,5 +1,6 @@
 // 7_rvalue2
 
+// 프로젝트 - 속성 - C/C++ - 언어 - 언어 확장 사용 안 함 (Disable language Extensions)
 struct Point {
 	int x, y;
 };
@@ -9,10 +10,10 @@ Point foo() { return p; }
 
 int main() {
 	int n1 = 10;
-	int& r1 = n1; //
-	int& r2 = 10; //
+	int& r1 = n1; // ok .. C++ 참조는 lvalue를 참조 할 수 있다.
+	// int& r2 = 10; // error C++ 참조는 rvalue를 참조 할 수 없다.
 
 	Point p2;
-	Point& r3 = p2;
-	Point& r4 = foo();
+	Point& r3 = p2; // ok  
+	Point& r4 = foo(); // error 임시객체는 rvalue 이다.
 }
