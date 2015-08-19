@@ -8,6 +8,8 @@ using namespace std;
 
 // CRTP를 사용해서 비 가상함수를 가상함수 처럼 동작하게 하는 예제.
 
+// MS 의 라이브러리중 ATL, WTL 이라는 라이브러리가 이 기술을 사용
+
 template<typename T> class Window {
 public:
 	void msgLoop() { // msgLoop(Window* this)
@@ -21,6 +23,8 @@ public:
 		cout << "Window onclick" << endl; // 1 
 	}
 };
+
+
 
 class MyWindow : public Window<MyWindow> {
 public:
