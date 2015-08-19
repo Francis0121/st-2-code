@@ -34,7 +34,27 @@ public:
 	}
 };
 
+//template<typename T> void Swap(T& a, T& b) {
+//	// 일반적인 swap 알고리즘
+//	T tmp = a; // 복사 생성자 호출
+////	a = b;	// 대입 연산자 호출
+////	b = tmp; // 대입 연산자 호출
+//}
+
+/*template<typename T> T&& move(T& a) {
+	return static_cast<T&&>(a);
+}*/
+
+template<typename T> void Swap(T& a, T& b) {
+	// 일반적인 swap 알고리즘
+	T tmp = move(a);
+	// T tmp = static_cast<T&&>(a); // Move 생성자 호출
+	//a = b;	// 대입 연산자 호출
+	//b = tmp; // 대입 연산자 호출
+}
+
 int main() {
 	Cat c1("NABI", 2);
-	Cat c2(c1);
+	Cat c2("AAA",  2);
+	Swap(c1, c2);
 }
