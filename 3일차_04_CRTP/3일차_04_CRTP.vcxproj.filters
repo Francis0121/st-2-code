@@ -27,5 +27,8 @@
     <ClCompile Include="4_CRTP4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="4_CRTP5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

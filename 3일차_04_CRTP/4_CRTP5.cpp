@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+template<typename T>
 class Count {
 public:
 	static int cnt;
@@ -15,15 +16,19 @@ public:
 		--cnt;
 	}
 };
-int Count::cnt = 0;
+template<typename T> int Count<T>::cnt = 0;
 // ----------------------------------
 // Car와 Truck도 객체 갯수를 관리하고 싶다.
-class Car {
+class Car : public Count<Car>{
 
 };
-class Truck {
+
+class Truck : public Count<Truck>{
 
 };
 
 int main() {
+	Car c1, c2;
+	Truck t1, t2;
+	t1.print_count();
 }
