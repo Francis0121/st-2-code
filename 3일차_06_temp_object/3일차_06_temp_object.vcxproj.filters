@@ -24,5 +24,8 @@
     <ClCompile Include="6_temp_object3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="6_temp_object4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
