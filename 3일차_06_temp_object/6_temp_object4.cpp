@@ -7,7 +7,9 @@ struct Point {
 
 Point p = { 1, 1 };
 
-Point foo() {
+// Point foo() : 값 리턴 - 임시객체 리턴, lvalue 가 될 수 없다.
+Point& foo() { // 참조 리턴 - 임시객체 생성안됨. lvalue가 될 수 있다.
+				// 단, 지역 변수는의 참조는 절대 안된다.
 	return p;
 }
 
