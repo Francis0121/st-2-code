@@ -11,9 +11,9 @@ public:
 	
 	}
 	
-	front() { 
-		buffer[0]; 
-	};
+	T front() { 
+		return buffer[0];
+	}
 
 	int size() {
 		return sz;
