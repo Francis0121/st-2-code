@@ -47,17 +47,24 @@ template<int N, typename T, typename ... Types>
 struct xtuple_type;
 
 // 0 번째 타입을 요구할때를 위한 부분 전문화
-template<int N, typename T, typename ... Types>
+template<typename T, typename ... Types>
 struct xtuple_type<0, xtuple<T, Types...>> {
 	typedef T type;
 };
 
 // 0이 아닌 경우
 template<int N, typename T, typename ... Types>
-struct xtuple_type<N, xtuple<T, Types...>> : xtuple_type<N-1, xtuple<Types..>>{
+struct xtuple_type<N, xtuple<T, Types...>> : xtuple_type<N-1, xtuple<Types...>>{
 
 };
 
+// xtuple_type을 확인 하기 위한 함수
+template<int N, typename T> void print_type(const T&a) {
+	cout << typeid(xtuple_type<N, T>::type).name() << endl;
+}
+
 int main() {
 	xtuple<int, char, double, short> t4(1, 'c', 3.3, 4);
+
+	print_type<1>(t4);
 }
