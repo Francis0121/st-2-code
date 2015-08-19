@@ -21,5 +21,14 @@
     <ClCompile Include="8_object_copy2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_object_copy3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8_object_copy4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8_object_copy5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
