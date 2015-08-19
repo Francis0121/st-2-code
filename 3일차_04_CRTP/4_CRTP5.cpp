@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// CRTP를 사용해서 모든 자식 클래스의 부모가 다른 타입이 되게 하는 기술
+// 부모의 static 변수를 자식들이 각각 따로 사용하게 하는 기법.
+
 template<typename T>
 class Count {
 public:
