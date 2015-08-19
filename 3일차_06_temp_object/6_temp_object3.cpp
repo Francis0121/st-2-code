@@ -22,9 +22,11 @@ public:
 // 함수 인자와 임시객체
 // 값 타입으로 리턴하는 함수는 임시객체를 만들게 된다.!
 Point foo() {
-	Point p2;
+	//Point p2;
 	cout << "foo" << endl;
-	return p2;
+	//return p2;
+	// 리턴용도로만 객체를 만든다면.. 아래 처럼 하는 것이 좋다.
+	return Point(); // 임시객체를 만들면서 리턴.
 }
 
 int main() {
