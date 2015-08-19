@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// 참조계수를 사용한 복사 생성자
+// 1. 참조계수는 동적 메모리할당해야 한다.
+//	static 멤버 data로 하면 안된다.!(생성자 마다가 아닌 전부 공유되기 때문에)
+
+// 2. COW(Copy ow Writ) : 공유 자원의 상태가 변경될 때 자원을 분리해야한다.
+
 class Cat {
 	char* name;
 	int age;
@@ -35,4 +41,10 @@ public:
 int main() {
 	Cat c1("NABI", 2);
 	Cat c2(c1); 
+
+	//c1.setName("AAA"); // c1 c2의 자원은 이제 분리되어야 한다.
+					// Copy On Write(COW) 개념
+
+	Cat c3("AA", 4);
+	Cat c4(c3);
 }
