@@ -5,11 +5,23 @@ using namespace std;
 // 메모리 할당 해지 정책을 담은 정책 클래스
 template<typename T> class xallocator {
 public:
+	// 메모리 할당과 해지만
 	T* allocate(int sz) {
-		return new T[sz];
+		//return new T[sz];
+		return (T*) operator new(sizeof(T)*sz);
 	}
 	void deallocate(T* p) {
-		delete[] p;
+		//delete[] p;
+		opeartor delete(p);
+	}
+
+	// 생성자 소멸자 호출을 별도로
+	void construct(T* p) {
+		new (p) T;
+	}
+
+	void destruct(T* p) {
+		p->~T();
 	}
 };
 
