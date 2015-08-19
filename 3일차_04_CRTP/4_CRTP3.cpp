@@ -1,20 +1,32 @@
 #include <iostream>
 using namespace std;
 
-class Cursor {
+template<typename T>
+class SingleTon {
 
-private:
-	Cursor() {}
-	static Cursor* instance;
+protected:
+	SingleTon() {}
+	static T* instance;
 
 public:
-	static Cursor& GetInstance() {
+	static T& GetInstance() {
 		if (instance == 0) {
-			instance = new Cursor;
+			instance = new T;
 		}
 		return *instance;
 	}
 
 };
 
-Cursor* Cursor::instance = 0;
+template<typename T> T* SingleTon<T>::instance = 0;
+
+//-------------------------
+// 마우스도 싱글톤으로 만들고 싶다.
+class Mouse : public SingleTon<Mouse> {
+
+};
+
+int main() {
+	Mouse& m = Mouse::GetInstance();
+	cout << &m << endl;
+}
