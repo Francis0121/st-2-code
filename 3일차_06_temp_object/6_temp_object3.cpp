@@ -27,6 +27,12 @@ Point foo() {
 	//return p2;
 	// 리턴용도로만 객체를 만든다면.. 아래 처럼 하는 것이 좋다.
 	return Point(); // 임시객체를 만들면서 리턴.
+				// Return value Optimization (RVO)라고 불리는 C++ IDimos
+				
+				// 요즘 C++ 컴파일러 : NRVO를 지원한다.
+				// VC - Release에서 지원함
+				// Named RVO
+				// 이름있는 객체도 RVO 최적화 할 수 있다.
 }
 
 int main() {
