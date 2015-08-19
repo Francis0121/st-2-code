@@ -22,6 +22,7 @@ template<typename T> T* SingleTon<T>::instance = 0;
 
 //-------------------------
 // 마우스도 싱글톤으로 만들고 싶다.
+// core/include/util/Singleton.h
 class Mouse : public SingleTon<Mouse> {
 
 };
