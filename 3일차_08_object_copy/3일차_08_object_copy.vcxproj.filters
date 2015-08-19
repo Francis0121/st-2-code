@@ -18,5 +18,8 @@
     <ClCompile Include="8_object_copy1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_object_copy2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
