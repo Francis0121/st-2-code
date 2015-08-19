@@ -28,6 +28,9 @@ public:
 // 자식 템플릿을 만들어서 캐스팅만 책임지게 합니다.
 // ~ public 상속을 private 상속으로 변화시키면(Vector 함수 내에 것들을 호출 시키지 못하도록 한다.
 // ~ 따라서 그에 대한 껍데기로 size, empty를 만들어 주어야 한다.
+// core/include/utils/Vector.h
+// "Thin Template" 이라고 불리는 디자인 기술
+// 구글에서 C++ IDioms를 찾압세요
 template<typename T> class Vector : private VectorImpl {
 
 public:
