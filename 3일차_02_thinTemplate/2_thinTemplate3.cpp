@@ -26,7 +26,9 @@ public:
 
 // 위 클래스를 바로 사용하면 항상 캐스팅하는 불편함이 있습니다.
 // 자식 템플릿을 만들어서 캐스팅만 책임지게 합니다.
-template<typename T> class Vector : public VectorImpl {
+// ~ public 상속을 private 상속으로 변화시키면(Vector 함수 내에 것들을 호출 시키지 못하도록 한다.
+// ~ 따라서 그에 대한 껍데기로 size, empty를 만들어 주어야 한다.
+template<typename T> class Vector : private VectorImpl {
 
 public:
 
@@ -36,6 +38,14 @@ public:
 
 	inline T front() {
 		return static_cast<T>(VectorImpl::front());
+	}
+
+	inline int size() {
+		return VectorImpl::size();
+	}
+
+	inline bool empty() {
+		return VectorImpl::empty();
 	}
 
 };
