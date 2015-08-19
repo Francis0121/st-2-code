@@ -1,7 +1,8 @@
+
 #include <iostream>
 using namespace std;
 
-template<typename T, typename ... Types> 
+template<typename T, typename ... Types>
 class xtuple : public xtuple<Types...> {
 public:
 	T value;
@@ -16,9 +17,6 @@ public:
 		N = 1 + xtuple<Types...>::N
 	};
 };
-
-// 이미 xtuple은 위에 있음으로 새로운 xtuple을 만들지 말고 부분 전문화 해야 합니다.
-//template<typename T> class xtuple {
 
 template<typename T> class xtuple<T> {
 public:
