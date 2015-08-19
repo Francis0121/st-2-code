@@ -24,5 +24,11 @@
     <ClCompile Include="7_rvalue3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="7_rvalue4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_rvalue5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
