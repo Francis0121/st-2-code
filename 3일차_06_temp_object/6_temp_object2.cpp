@@ -1,9 +1,6 @@
-// 임시 객체
+// 임시객체
 #include <iostream>
 using namespace std;
-
-// Point p; => 이름 있는 객체 p, 블럭({})을 벗어날때 까지 생존
-// Point() => 이름 없는 임시객체 생성. 현재 문장에서만 유효..
 
 class Point {
 	int x, y;
@@ -11,7 +8,7 @@ public:
 	Point() {
 		cout << "생성자" << endl;
 	}
-	
+
 	~Point() {
 		cout << "소멸자" << endl;
 	}
@@ -22,9 +19,10 @@ public:
 
 };
 
+// 함수 인자와 임시객체
+void foo(Point p){}
+
 int main() {
-	cout << "AAA" << endl;
-	// Point p;
-	Point(); // 클래스이름()
-	cout << "BBB" << endl;
+	Point p;
+	foo(p);
 }
