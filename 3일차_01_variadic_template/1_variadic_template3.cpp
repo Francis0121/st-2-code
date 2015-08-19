@@ -69,5 +69,5 @@ int main() {
 	print_type<1>(t4);
 	
 	// ¼÷Á¦ ..
-	cout << xget<1>(t4) << endl;
+	//cout << xget<1>(t4) << endl;
 }

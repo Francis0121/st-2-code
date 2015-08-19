@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_01_variadic_templat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_02_thinTemplate", "3일차_02_thinTemplate\3일차_02_thinTemplate.vcxproj", "{C3D3749D-D58C-4D69-A395-E8A39EB12A54}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3일차_03_policy_based_design", "3일차_03_policy_based_design\3일차_03_policy_based_design.vcxproj", "{4BC3BD51-3FA8-41FA-B164-34FD414048E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -123,6 +125,10 @@ Global
 		{C3D3749D-D58C-4D69-A395-E8A39EB12A54}.Debug|x86.Build.0 = Debug|Win32
 		{C3D3749D-D58C-4D69-A395-E8A39EB12A54}.Release|x86.ActiveCfg = Release|Win32
 		{C3D3749D-D58C-4D69-A395-E8A39EB12A54}.Release|x86.Build.0 = Release|Win32
+		{4BC3BD51-3FA8-41FA-B164-34FD414048E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{4BC3BD51-3FA8-41FA-B164-34FD414048E2}.Debug|x86.Build.0 = Debug|Win32
+		{4BC3BD51-3FA8-41FA-B164-34FD414048E2}.Release|x86.ActiveCfg = Release|Win32
+		{4BC3BD51-3FA8-41FA-B164-34FD414048E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
