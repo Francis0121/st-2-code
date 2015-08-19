@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-template<typename T, typename ThreadModel> 
+template<typename T, typename ThreadModel = NoLock> 
 class List  : public ThreadModel{
 public:
 	void push_front(const T& a) {

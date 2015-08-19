@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3일차_03_policy_based_design1.cpp">
+    <ClCompile Include="3_policy_based_design2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3_policy_based_design1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
