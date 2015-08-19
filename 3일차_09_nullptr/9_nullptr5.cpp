@@ -33,5 +33,5 @@ int main() {
 	//HowLong(goo, 0);
 	HowLong(goo, nullptr);
 	HowLong(hoo, 1, 2);
-	HowLong(koo);
+	HowLong(koo);//인자가 없는경우도 문제없음
 }
