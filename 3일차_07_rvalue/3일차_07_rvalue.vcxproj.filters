@@ -21,5 +21,8 @@
     <ClCompile Include="7_rvalue2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="7_rvalue3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
