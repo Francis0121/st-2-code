@@ -21,5 +21,6 @@ int main() {
 
 	int&& r = 10;
 	foo(r); // 1 --> rvalue reference는 lavlue이다.
+			// rvalue 라는 용어와 rvalue reference를 혼동하지 마세요.
 
 }
