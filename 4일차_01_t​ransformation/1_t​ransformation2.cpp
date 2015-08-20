@@ -14,8 +14,24 @@ public:
 	~OFile() {
 		fclose(file);
 	}
+
+	// OFile => FILE*로의 변환을 허용한다.
+	operator FILE*() {
+		return file;
+	}
 };
 
 int main() {
-	FILE* f = fopen("a.txt", "wt");
+	OFile f("a.txt");
+	
+	// 파일 IO 작업
+	fprintf(f, "n = %d", 10);
+	fputs("hello", f);
+
+	//FILE* f = fopen("a.txt", "wt");
+
+	String s1 = "hello"; // string 클래스
+
+	char s2[10];
+	strcpy(s2, s1); // 되는게 좋을까요? 안되는게 좋을까요?
 }
