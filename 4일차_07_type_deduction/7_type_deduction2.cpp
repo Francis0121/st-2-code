@@ -16,5 +16,7 @@ int main() {
 
 	goo(n); // T : int			a : const int&
 	goo(c); // T : int			a : const int&
-	goo(r); // T : int			a : const int&
+	goo(r); // T : int			a : 
+	
+	const int&
 }
