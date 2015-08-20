@@ -21,17 +21,29 @@ public:
 	}
 };
 
+void foo(OFile f) {
+
+}
+
 int main() {
 	OFile f("a.txt");
-	
-	// 파일 IO 작업
-	fprintf(f, "n = %d", 10);
-	fputs("hello", f);
-
-	//FILE* f = fopen("a.txt", "wt");
-
-	String s1 = "hello"; // string 클래스
-
-	char s2[10];
-	strcpy(s2, s1); // 되는게 좋을까요? 안되는게 좋을까요?
+	foo(f); // ok 당연하다 
+	foo("hello"); // complie 에러가 발생하지 않는다?
+				// const char* => OFile로 변환되면 ok
 }
+
+//int main() {
+//	OFile f("a.txt");
+//	
+//	// 파일 IO 작업
+//	fprintf(f, "n = %d", 10);
+//	fputs("hello", f);
+//
+//	//FILE* f = fopen("a.txt", "wt");
+//
+//	String s1 = "hello"; // string 클래스
+//
+//	char s2[10];
+//	strcpy(s2, s1); // 되는게 좋을까요? 안되는게 좋을까요?
+//				// String => const char* 로 변환되어야 한다.
+//}
