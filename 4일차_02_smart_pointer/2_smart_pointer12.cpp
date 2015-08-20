@@ -45,7 +45,8 @@ public:
 		// const RefBase*	=> const T*	: ok!!
 		// const RefBase*	=> T*		:error
 		if (--mCount == 0) {
-			delete static_cast<const T*>(this);
+			//delete static_cast<const T*>(this);
+			delete static_cast<T*>(const_cast<LightRefBase*>(this));
 		}
 	}
 };
