@@ -12,7 +12,7 @@ void goo(int& a) { cout << "goo" << endl; a = 20; }
 // T&& : rvalue 레펀런스가 아니라 univerwsal reference 또는 forward reference라고 합니다.
 template<typename F, typename T>
 void HowLong(F f, T&& a) {
-	f(a);
+	f(forward<T&&>a);
 }
 
 int main() {
