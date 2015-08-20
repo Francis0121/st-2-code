@@ -1,20 +1,39 @@
 // 4 복사 금지 smart Pointer
-
 #include <iostream>
 using namespace std;
 
-template <typename T>
+// 메모리 해지 전략을 담은 함수객체들
+struct Freer {
+	inline void operator()(void* p) const {
+		cout << "free 사용" << endl;
+		free(p);
+	}
+};
+
+template<typename T>
+struct DefaultDelete {
+	// 주의 void* delete 하면 소멸자가 호출되지 않습니다.
+	//inline void operator()(void* p) const {
+	inline void operator()(T* p) const {
+		cout << "delete 사용" << endl;
+		delete p;
+	}
+};
+
+template <typename T, typename D = DefaultDelete<T>>
 class UniquePtr {
 	T* obj;
 	UniquePtr(const UniquePtr&) = delete;
 	UniquePtr& operator=(const UniquePtr& p) = delete;
 
 public:
-	inline UniquePtr(T* p = 0) : obj(p) {
+	inline explicit UniquePtr(T* p = 0) : obj(p) {
 
 	}
 	inline ~UniquePtr() {
-		delete obj;
+		//D d; // 함수객체 생성
+		//d(obj); // 함수객체이므로 함수 처럼 사용.
+		D()(obj);
 	}
 
 	inline T* operator->() {
@@ -27,5 +46,7 @@ public:
 };
 
 int main() {
-	UniquePtr<int> p1 = new int;
+	UniquePtr<int, DefaultDelete<int>> p1(new int);
+	UniquePtr<int, Freer> p2((int*)malloc(100));
+	UniquePtr<int> p3(new int);
 }
