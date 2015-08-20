@@ -59,6 +59,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4일차_01_t​ransformatio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4일차_02_smart_pointer", "4일차_02_smart_pointer\4일차_02_smart_pointer.vcxproj", "{5889A6B4-41A5-466A-8A7A-72F2C78C15D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4일차_03_const", "4일차_03_const\4일차_03_const.vcxproj", "{CB5C7644-4321-4703-BC98-97206327F8D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4일차_04_not_copy_smart_pointer", "4일차_04_not_copy_smart_pointer\4일차_04_not_copy_smart_pointer.vcxproj", "{308156E5-E1E5-4E5B-AE2F-2E49BFB30524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -177,6 +181,14 @@ Global
 		{5889A6B4-41A5-466A-8A7A-72F2C78C15D3}.Debug|x86.Build.0 = Debug|Win32
 		{5889A6B4-41A5-466A-8A7A-72F2C78C15D3}.Release|x86.ActiveCfg = Release|Win32
 		{5889A6B4-41A5-466A-8A7A-72F2C78C15D3}.Release|x86.Build.0 = Release|Win32
+		{CB5C7644-4321-4703-BC98-97206327F8D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{CB5C7644-4321-4703-BC98-97206327F8D1}.Debug|x86.Build.0 = Debug|Win32
+		{CB5C7644-4321-4703-BC98-97206327F8D1}.Release|x86.ActiveCfg = Release|Win32
+		{CB5C7644-4321-4703-BC98-97206327F8D1}.Release|x86.Build.0 = Release|Win32
+		{308156E5-E1E5-4E5B-AE2F-2E49BFB30524}.Debug|x86.ActiveCfg = Debug|Win32
+		{308156E5-E1E5-4E5B-AE2F-2E49BFB30524}.Debug|x86.Build.0 = Debug|Win32
+		{308156E5-E1E5-4E5B-AE2F-2E49BFB30524}.Release|x86.ActiveCfg = Release|Win32
+		{308156E5-E1E5-4E5B-AE2F-2E49BFB30524}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
