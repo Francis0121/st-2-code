@@ -27,5 +27,11 @@
     <ClCompile Include="6_perfect_forwarding4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="6_perfect_forwarding5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="6_perfect_forwarding6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
