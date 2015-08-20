@@ -45,6 +45,7 @@ public:
 };
 
 // sp를 사용하려면 반드시 incStrong()와 decStrong()이 있어야 한다.
+// sp를 사용하려면 RefBase의파생 클래스로만들어야 한다.
 class Trunk : public RefBase{
 public:
 	~Trunk() {
