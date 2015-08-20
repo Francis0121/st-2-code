@@ -15,7 +15,7 @@ int main() {
 	int n = 10;
 
 	foo(n); // int&
-	foo(10); // int&7
+	foo(10); // int&&
 
 	int& r = n;
 	foo(r);
