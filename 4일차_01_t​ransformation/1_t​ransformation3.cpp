@@ -31,7 +31,7 @@ void foo(String16 s) {
 foo("hello"); // const char* => string 16으로 암시적 변환되어야한다./
 				// String16은 expliit 생성자 이므로 error
 
-foo(String("hello"))0;; // ok String16객체를 만들어서 전달
+foo(String("hello"))0;; // ok String16객체를 만들어서 전달ㄴ
 
 //int main() {
 //
