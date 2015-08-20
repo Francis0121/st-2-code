@@ -18,5 +18,8 @@
     <ClCompile Include="4_not_copy_smart_pointer1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="4_not_copy_smart_pointer2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
