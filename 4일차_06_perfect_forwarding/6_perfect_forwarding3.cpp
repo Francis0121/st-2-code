@@ -15,6 +15,9 @@ class my_reference_wrapper {
 	T* obj; // 메모리를 가르켜야 하므로 결국 포인터 입니다.
 public:
 	my_reference_wrapper(T& r) : obj(&r) {}
+
+	// 진짜 참조와의 호환을 위해서 변환연산자 제공
+	operator T&() { return *obj; }
 };
 
 int main() {
@@ -28,8 +31,10 @@ int main() {
 
 	r2 = r1; // 이 한줄의 결과를 예측해 보세요.
 
-	int& r3 = r1;
+	int& r3 = r2;// 진짜 참조와 호환되게 해보자.
+					// r1.operator int&()
 
+	cout << r3 << endl;
 						// 값 이동시		참조이동시
 	cout << n1 << endl; // 10			10
 	cout << n2 << endl; // 10			20

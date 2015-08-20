@@ -1,17 +1,17 @@
-// 6_완벽한 전달자 - Perfect Forwarding
+// 6 완벽한전달자4
 #include <iostream>
 using namespace std;
 
+template<typename T>
+class my_reference_wrapper {
+	T* obj; 
+public:
+	my_reference_wrapper(T& r) : obj(&r) {}
+	operator T&() { return *obj; }
+};
+
 void foo(int a) { cout << "foo" << endl; }
 void goo(int& a) { cout << "goo" << endl; a = 20; }
-
-// 해결책 1. 함수 오버로딩.
-//			인자가 한개인 함수의 완벽한 전달자 => 2개의 HowLong
-//			10개인 함수의 완벽한 전달자 => 1024개의 HowLongw
-template<typename F, typename T>
-void HowLong(F f, T& a) {
-	f(a);
-}
 
 template<typename F, typename T>
 void HowLong(F f, const T& a) {
@@ -20,9 +20,9 @@ void HowLong(F f, const T& a) {
 
 int main() {
 	int n = 0;
-
 	HowLong(foo, 0);
 	HowLong(goo, n);
 
 	cout << n << endl;
 }
+
