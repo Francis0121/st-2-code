@@ -36,7 +36,7 @@ public:
 	inline explicit UniquePtr(T* p = 0) : obj(p) {
 
 	}
-	inline ~UniquePtr() {\
+	inline ~UniquePtr() {
 		D()(obj);
 	}
 
