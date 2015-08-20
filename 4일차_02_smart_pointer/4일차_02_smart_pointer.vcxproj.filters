@@ -48,5 +48,8 @@
     <ClCompile Include="2_smart_pointer11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2_smart_pointer12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
