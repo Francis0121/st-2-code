@@ -10,7 +10,11 @@ int main() {
 	const int c = n;
 	const int& r = c;
 
-	foo(n); // T :		a :
-	foo(c); // T :		a :
-	foo(r); // T :		a :
+	foo(n); // T :	int			a :	int&
+	foo(c); // T :	const int	a : const int&
+	foo(r); // T :	const int	a : const int&
+
+	goo(n); // T : int			a : const int&
+	goo(c); // T : int			a : const int&
+	goo(r); // T : int			a : const int&
 }
