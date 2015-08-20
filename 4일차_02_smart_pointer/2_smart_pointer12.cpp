@@ -58,6 +58,19 @@ public:
 	}
 };
 
+class Test {
+	int x;
+public:
+	void foo() { // void foo(Test* const this)
+		// this 자체는 const 이지만 this 가 가르치키는 곳은 const 아님
+		this->x = 10;
+	}
+
+	void goo() const { // void goo(const Test* const this)
+		this->x = 10; // error
+	}
+};
+
 int main() {
 	sp<Truck> p = new Truck;
 	//const Truck t;
