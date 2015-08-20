@@ -2,6 +2,10 @@
 #include <iostream>
 using namespace std;
 
+// ~ 정리
+// 변환 연산자 : 객체(Point) => 다른 타입(int)
+// 변환 생성자 : 다른 타입(int) => 객체(Point)
+
 class Point {
 	int x, y;
 public :
