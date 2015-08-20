@@ -17,8 +17,15 @@ int main() {
 }
 
 // cin 은 istram 클래스 입니다. jerry schwarz 이라는 개발자가 만들었습니다.
-void true_function(){}
+//void true_function(){}
 class istream {
+	class dummy {
+	public: 
+		void true_function() {
+
+		}
+	};
+
 public :
 	bool fail(){}
 	/*operator bool() {
@@ -27,8 +34,14 @@ public :
 	/*operator void*() {
 		return fail() ? 0 : this;
 	}*/
-	typedef void(*PF)();
-	operator PF() { return fail() ? 0 : &true_function; }
+	/*typedef void(*PF)();
+	operator PF() { 
+		return fail() ? 0 : &true_function; 
+	}*/
+	typedef void(dummy::*PF)();
+	operator PF() { 
+		return fail ? 0 : &dummy::true_function; 
+	}
 };
 
 istream cin;
@@ -44,3 +57,8 @@ delete cin; // 컴파일 할 때 에러가 나지 않는다.
 
 // 3. if() 놓이고 싶다. shift 연산 불가능, delete 안되야 한다.
 //	함수포인터로 변환하자
+void(*)(f) = cin; // 이 에러가 나지 않더라.
+
+// 4. if(0에 놓일 수 있지만 .. 최대한 side effect는 줄이고 싶었다.
+//
+void(dummy::*f)() = cin; // 불가능 safe bool (if로 테스트하는데 어떠한 버그도 가질수없도록 한다.)
