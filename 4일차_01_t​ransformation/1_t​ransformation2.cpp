@@ -8,7 +8,9 @@ using namespace std;
 class OFile {
 	FILE *file;
 public:
-	OFile(const char* name, const char* mode = "wt") {
+	// explicit : 인자가 한개인 생성자가 암시적 변환을 일으키는 것을 막는다.
+	//			단, 명시적 변환은 허용한다.
+	explicit OFile(const char* name, const char* mode = "wt") {
 		file = fopen(name, mode);
 	}
 	~OFile() {
@@ -30,6 +32,7 @@ int main() {
 	foo(f); // ok 당연하다 
 	foo("hello"); // complie 에러가 발생하지 않는다?
 				// const char* => OFile로 변환되면 ok
+	foo(static_cast<OFile>("hello"));// ok 명시적 변환
 }
 
 //int main() {
