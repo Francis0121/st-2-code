@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_t​ransformation1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1_t​ransformation2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1_t​ransformation3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1_transformation4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1_transformation5.cpp">
+    <ClCompile Include="2_smart_pointer1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
