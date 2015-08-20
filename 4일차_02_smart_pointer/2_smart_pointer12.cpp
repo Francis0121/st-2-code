@@ -67,7 +67,7 @@ public:
 	}
 
 	void goo() const { // void goo(const Test* const this)
-		this->x = 10; // error
+		//this->x = 10; // error
 	}
 };
 
