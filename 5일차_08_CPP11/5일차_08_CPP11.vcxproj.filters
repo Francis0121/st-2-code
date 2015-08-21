@@ -21,5 +21,8 @@
     <ClCompile Include="8_InitializerList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_InitializerList2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
