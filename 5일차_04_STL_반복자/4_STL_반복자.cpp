@@ -70,7 +70,7 @@ int main() {
 	s.push_front(20);
 	s.push_front(30);
 
-	iterator p = s.begin();
+	slist<int>::iterator p = s.begin();
 	// 이제부터는 p를 s의 c의 처음 요소를 가르키는포인터로 생각하면 됩니ㅏㄷ.
 	while (p != s.end()) {
 		cout << *p << endl;
