@@ -36,5 +36,8 @@
     <ClCompile Include="8_생성자상속.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_생성자상속2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
