@@ -4,7 +4,9 @@ using namespace std;
 class Point {
 	
 public:
-	int x, y;
+	int x = 0; // classs 안에서 몀베 변수를 상수값으로 바로 초기화 가능 
+	int y = 0; // java c#처럼
+	int a{ 0 }; // 가장 권장하는 스타일
 
 	Point(int a, int b) : x(a), y(b){}
 	
