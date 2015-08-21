@@ -20,8 +20,10 @@ using xremove_const_t = typename xremove_const<T>::type;
 
 template<typename T> void foo(T& a) {
 	// T에서 const를 제거한 타입을 구하는 방법
- 	// typename xremove_const<T>::type n;
-	xremove_const_t<T> n; // 위와 동일한 표현이다.
+ 	// typename xremove_const<T>::type n; C++ 11 style
+
+	//xremove_const_t<T> n; // 위와 동일한 표현이다. C++14 style
+	remove_const_t<T> n; // C++14
 }
 
 int main() {
