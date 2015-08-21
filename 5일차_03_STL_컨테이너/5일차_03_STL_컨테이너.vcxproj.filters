@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2_STL_알고리즘.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2_STL_알고리즘2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2_STL_알고리즘3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2_STL_알고리즘4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2_STL_알고리즘5.cpp">
+    <ClCompile Include="3_STL_컨테이너.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
