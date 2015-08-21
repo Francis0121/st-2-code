@@ -9,8 +9,9 @@ using namespace std;
 
 // 2. T* 라고 하면 진짜 포인터만 사용가능합니다.
 //	  스마트 포인터를 사요할 수 없습니다.
-template<typename T>
-T* xfind(T* first, T* last, T c) {
+// template<typename T> T* xfind(T* first, T* last, T c) {
+template<typename T1, typename T2>
+T1 xfind(T1 first,T1 last, T2 c){
 	while (first != last && *first != c)
 		++first;
 
@@ -20,8 +21,8 @@ T* xfind(T* first, T* last, T c) {
 int main() {
 	double x[10] = { 1,2,3,4,5,6,7,8,9,10 };
 
-	// double* p = xfind(x, x + 10, 5); 이거안됨 double dobule int 라서
-	double* p = xfind(x, x + 10, 5.0);
+	double* p = xfind(x, x + 10, 5); // Step3 .이거안됨 double dobule int 라서
+	//double* p = xfind(x, x + 10, 5.0);
 
 	cout << *p << endl;
 }
