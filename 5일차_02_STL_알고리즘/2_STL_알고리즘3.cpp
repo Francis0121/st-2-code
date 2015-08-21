@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-char* xstrchr(char* first, char* last, char c) {
+// Step 3. 검색 대상 타입의 일반화 - 템플릿 도입.
+
+template<typename T>
+T* xfind(T* first, T* last, T c) {
 	while (first != last && *first != c)
 		++first;
 
@@ -9,12 +12,9 @@ char* xstrchr(char* first, char* last, char c) {
 }
 
 int main() {
-	char s[] = "abcdefgh";
+	double x[10] = { 1,2,3,4,5,6,7,8,9,10 };
 
-	char* p = xstrchr(s, s + 4, 'a');
+	double* p = xfind(x, x + 10, 5.0);
 
-	if (p == 0)
-		cout << "찾을 수 없습니다" << endl;
-	else
-		cout << *p << endl;
+	cout << *p << endl;
 }
