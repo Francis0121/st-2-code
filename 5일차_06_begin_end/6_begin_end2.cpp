@@ -48,6 +48,13 @@ using namespace std;
 //template<typename T, int N>
 //auto end(T(&arr)[N]) { return arr + N; }
 //
+
+// 멤버함수 begin()/ end()를 사용하지 말고
+// 일반함수 begin()/ end()를 사용하자
+
+// 하나의 함수에서 객체형 컨테이너와 일반 배열을 모두 처리할 수 있게 된다.
+// is_array<T>() 등의 함수 오버로딩이 필요 없게 된다.
+
 template<typename T> void show(T& c) {
 	auto p = begin(c);
 
