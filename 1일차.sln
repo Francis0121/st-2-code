@@ -89,6 +89,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_09_가변인자템�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_10_완벽한전달자", "5일차_10_완벽한전달자\5일차_10_완벽한전달자.vcxproj", "{8B913DCE-E7F2-4DF8-928D-1D5A8F9CFF89}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_11_이름충돌", "5일차_11_이름충돌\5일차_11_이름충돌.vcxproj", "{ADC303B2-0856-494F-B42F-A95B9397F8AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_12_tuple", "5일차_12_tuple\5일차_12_tuple.vcxproj", "{5DD48C51-20FE-4DAC-BD46-6D8E9C8C5C58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -267,6 +271,14 @@ Global
 		{8B913DCE-E7F2-4DF8-928D-1D5A8F9CFF89}.Debug|x86.Build.0 = Debug|Win32
 		{8B913DCE-E7F2-4DF8-928D-1D5A8F9CFF89}.Release|x86.ActiveCfg = Release|Win32
 		{8B913DCE-E7F2-4DF8-928D-1D5A8F9CFF89}.Release|x86.Build.0 = Release|Win32
+		{ADC303B2-0856-494F-B42F-A95B9397F8AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADC303B2-0856-494F-B42F-A95B9397F8AE}.Debug|x86.Build.0 = Debug|Win32
+		{ADC303B2-0856-494F-B42F-A95B9397F8AE}.Release|x86.ActiveCfg = Release|Win32
+		{ADC303B2-0856-494F-B42F-A95B9397F8AE}.Release|x86.Build.0 = Release|Win32
+		{5DD48C51-20FE-4DAC-BD46-6D8E9C8C5C58}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DD48C51-20FE-4DAC-BD46-6D8E9C8C5C58}.Debug|x86.Build.0 = Debug|Win32
+		{5DD48C51-20FE-4DAC-BD46-6D8E9C8C5C58}.Release|x86.ActiveCfg = Release|Win32
+		{5DD48C51-20FE-4DAC-BD46-6D8E9C8C5C58}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
