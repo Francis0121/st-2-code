@@ -15,6 +15,7 @@ void foo(Types ... args) {
 	goo(args...); // goo(1,2,3);
 //	goo(negative(args...)); // error. negative는 인자가 한개이다.
 	goo(negative(args)...);
+	// cppreference.com에 가변인자 템플리 에제가 많다
 }
 
 int main() {
