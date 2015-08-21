@@ -2,6 +2,9 @@
 #include <iostream>
 using namespace std;
 
+// C++ Programming Language 책 13장에 아래 예제의 전체 코드가 있습니다.
+// 얀 Stroustrup
+
 class String {
 	char *buf;
 	int *ref; // 참조계수
