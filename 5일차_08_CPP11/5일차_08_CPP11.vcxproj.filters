@@ -54,5 +54,8 @@
     <ClCompile Include="8_raw_string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_사용자정의상수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
