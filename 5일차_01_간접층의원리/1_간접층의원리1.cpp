@@ -3,6 +3,8 @@
 // 아무리 어려운 S/W 문제점도 중간층(기존 요소 사이에 새로운 요소)를 도입하면 해결할 수 있다.
 // Level of indirection 이라는 원리
 
+// 기존요소를 대신한다는 의미로 "Proxy"패턴이라고 부르는 디자인 기법.
+
 struct VectorSize {
 	int size;
 	VectorSize(int n)  // int => VectorSize로 암시적 변환된다.
