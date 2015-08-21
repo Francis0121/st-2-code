@@ -18,17 +18,18 @@ public:
 
 	// xfind로 보내려면 진짜 포인터처럼 동작해야 한다.
 	// ++, *, ==, != 있어야 한다.
-	slist_iterator& operator++() {
-		// ?
+	inline slist_iterator& operator++() {
+		current = current->next;
 		return *this
 	}
-	? operator*() {
-		return ? ; 
+	inline T& operator*() {
+		return current->data ; 
 	}
-	bool operator==(const slist_iterator& t){
+	inline  bool operator==(const slist_iterator& t){
+		return current == t.current;
 	}
-	bool operator!=(cinst slist_iterator& t) {
-
+	inline bool operator!=(cinst slist_iterator& t) {
+		return current != t.current;
 	}
 };
 
