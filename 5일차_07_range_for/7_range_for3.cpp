@@ -3,6 +3,8 @@
 #include <type_traits>
 using namespace std;
 
+// begin_end 1번 소스 : C++98 style
+// 아래함수 : C++ 11의 새로운 문법을 사용한 코드 -훨씬 간단해짐
 template<typename T> void show(T& c) {
 	for (auto n : c) {
 		cout << n << " ";
