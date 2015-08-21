@@ -25,4 +25,7 @@ int main() {
 	int x[10]{ 0 };
 	Point p{ 1, 2 };
 	Complex c{ 0, 0 };
+
+	int n3 = 3.4; // ok ... C와의 호환성 때문에 C++도 지원하기로 결정.
+	int n4{ 3.4 };
 }
