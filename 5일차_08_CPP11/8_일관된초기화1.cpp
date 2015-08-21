@@ -12,9 +12,17 @@ public:
 };
 
 int main() {
-	int n1 = 0;
-	int n2(0);
-	int x[10];
-	Point p;
-	Complex c;
+	//int n1 = 0;
+	//int n2(0);
+	//int x[10] = { 0 };
+	//Point p = { 1, 2 };
+	//Complex c(0, 0);
+
+	// Uniform initialize : 변수의 종류에 상관없이 동일한 방법으로 초기화 할 수 있게 하자.
+
+	int n1{ 0 };
+	int n2{ 0 };
+	int x[10]{ 0 };
+	Point p{ 1, 2 };
+	Complex c{ 0, 0 };
 }
