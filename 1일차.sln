@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_05_iterator_categor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_06_begin_end", "5일차_06_begin_end\5일차_06_begin_end.vcxproj", "{1542E4B5-20EA-4FD7-9B2E-DA3AF40F926C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_07_range_for", "5일차_07_range_for\5일차_07_range_for.vcxproj", "{811179A3-3637-4B35-85BF-FF0E34FE6C3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -243,6 +245,10 @@ Global
 		{1542E4B5-20EA-4FD7-9B2E-DA3AF40F926C}.Debug|x86.Build.0 = Debug|Win32
 		{1542E4B5-20EA-4FD7-9B2E-DA3AF40F926C}.Release|x86.ActiveCfg = Release|Win32
 		{1542E4B5-20EA-4FD7-9B2E-DA3AF40F926C}.Release|x86.Build.0 = Release|Win32
+		{811179A3-3637-4B35-85BF-FF0E34FE6C3B}.Debug|x86.ActiveCfg = Debug|Win32
+		{811179A3-3637-4B35-85BF-FF0E34FE6C3B}.Debug|x86.Build.0 = Debug|Win32
+		{811179A3-3637-4B35-85BF-FF0E34FE6C3B}.Release|x86.ActiveCfg = Release|Win32
+		{811179A3-3637-4B35-85BF-FF0E34FE6C3B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

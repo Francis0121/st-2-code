@@ -7,7 +7,11 @@ int main() {
 
 	vector<int> v(x, x + 10);
 
-	for (int n : x){ // ranged - for ¹®
+	for (auto n : x){ // ranged - for ¹®
+		cout << n << endl;
+	}
+
+	for (auto n : v) { // ranged - for ¹®
 		cout << n << endl;
 	}
 
