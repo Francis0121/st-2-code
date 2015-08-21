@@ -18,5 +18,11 @@
     <ClCompile Include="7_range_for.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="7_range_for2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_range_for3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
