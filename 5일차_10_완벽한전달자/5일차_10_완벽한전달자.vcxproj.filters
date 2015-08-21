@@ -24,5 +24,8 @@
     <ClCompile Include="10_완벽한전달자3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="10_완벽한전달자4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
