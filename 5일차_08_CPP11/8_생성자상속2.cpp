@@ -11,7 +11,7 @@ public:
 
 class Derived : public Base{
 public:
-	using Base::Base;
+	using Base::Base; // 부모 생성자도 상속해 달라
 	Derived(){}
 };
 
