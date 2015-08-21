@@ -25,6 +25,20 @@ using namespace std;
 //	typedef bidirectional_iterator_tag iterator_category;
 //};
 
+// 반복자는 2가지 형태가 있습니다.
+// 1. 진짜 포인터
+// 2. 객체로 만든 반복자
+// 2가지 형태 때문에 일반화 알고리즘 작성이 어렵습니다.
+// 아래 도구가 필요합니다.
+
+//template<typename T> struct iterator_traits {
+//	typedef T::iterator_category iterator_category;
+//};
+//
+//template<typename T> struct iterator_traits<T*> {
+//	typedef random_access_iterator_tag iterator_category;
+//};
+
 // 모든 반복잔는 전진 시키는 함수를 만들어 보자
 template<typename T>
 void xadvanceImp(T& p, int n, random_access_iterator_tag) { // n > 0 만 생각합니다.
@@ -38,11 +52,17 @@ void xadvanceImp(T& p, int n, input_iterator_tag) { // n > 0 만 생각합니다.
 
 template<typename T>
 void xadvance(T& p, int n) { // n > 0 만 생각합니다.
-	xadvanceImp(p, n, typename T::iterator_category());
+	//xadvanceImp(p, n, typename T::iterator_category());
+	xadvanceImp(p, n, typename iterator_traits<T>::iterator_category());
 }
 
 int main() {
 	int x[10] = { 1,2,3,4,5,6,7,8,9,10 };
+
+	int* p2 = x;
+	xadvance(p2, 7);
+	cout << *p2 << endl;
+
 	vector<int> v(x, x + 10); // x ~ x+10으로 초기화
 	vector<int>::iterator p = v.begin();
 
