@@ -14,6 +14,7 @@ template<typename T> class slist {
 public:
 	slist() : head(0){}
 	
+	// 아래 처럼 Node 의 생성자를 잘 활용하면 싱글리스트 코드를 간단하게 만들 수 있습니다.
 	void push_front(const T& a){
 		head = new Node<T>(a, head);
 	}
