@@ -14,6 +14,8 @@ public:
 	virtual void goo() override {}		// 3. error 상수 함수가 아니다.
 	virtual void gooo() override {}		// 4. error 함수이름이 틀렸다.
 	void hoo() override {}				// 5. error 가상함수가 아니다.
+
+	virtual void foo(int) final{ } // Dervied 의 자식 클래스 부터는 foo를 재정의 할 수 없다./
 };
 
 int main() {
