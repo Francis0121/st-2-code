@@ -85,3 +85,5 @@ int main() {
 	// 숙제 ..
 	cout << xget<1>(t4) << endl;
 }
+
+// C++ Template guide책 21장에 function<> 만드는 소스있습니다.
