@@ -8,5 +8,9 @@ int main() {
 	cout << s << endl;
 
 	// "\" 한번만 적을 수 있는 표현식
-	char s2[] = R"(C:\AAA\BBB)";
+	// R"(    )"
+	char s2[] = R"(C:\AAA\B)";
+
+	cout << s2 << endl;
+
 }
