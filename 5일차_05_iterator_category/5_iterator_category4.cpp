@@ -1,0 +1,51 @@
+#include <iostream>
+#include <list>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// STL에는 반복자의 5개 개념을 타입화 합니다.
+// empty class : 아무 멤버도 없는 구조체(클래스)
+//				멤버가 없어도 타입은 타입이다.
+//				대부분, 함수 오버로딩이나 템플릿 인자로 활용된다.
+//struct input_iterator_tag{};
+//struct output_iterator_tag {};
+//struct forward_iterator_tag : input_iterator_tag {};
+//struct bidirectional_iterator_tag : forward_iterator_tag {};
+//struct random_access_iterator_tag : bidirectional_iterator_tag {};
+//
+//// 모든 반복자의 설계자는 자신이 어떤 종류인지 외부에 알려야 한다.
+//template<typename T> class vector_iterator {
+//public:
+//	typedef random_access_iterator_tag iterator_category;
+//};
+//
+//template<typename T> class list_iterator {
+//public:
+//	typedef bidirectional_iterator_tag iterator_category;
+//};
+
+// 모든 반복잔는 전진 시키는 함수를 만들어 보자
+template<typename T>
+void xadvanceImp(T& p, int n, random_access_iterator_tag) { // n > 0 만 생각합니다.
+	p = p + n;
+}
+
+template<typename T>
+void xadvanceImp(T& p, int n, input_iterator_tag) { // n > 0 만 생각합니다.
+	while (n--) ++p;
+}
+
+template<typename T>
+void xadvance(T& p, int n) { // n > 0 만 생각합니다.
+	xadvanceImp(p, n, typename T::iterator_category());
+}
+
+int main() {
+	int x[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	vector<int> v(x, x + 10); // x ~ x+10으로 초기화
+	vector<int>::iterator p = v.begin();
+
+	xadvance(p, 5); // p를 5칸 전진
+	cout << *p << endl;
+}
