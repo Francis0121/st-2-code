@@ -18,5 +18,8 @@
     <ClCompile Include="6_begin_end.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="6_begin_end2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
