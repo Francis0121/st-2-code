@@ -43,8 +43,21 @@ public:
 		}
 
 		// Proxy는 char을 대입 할 수 있어야 한다.
-		CharProxy& operator =(char c) {
+		CharProxy& operator=(char c) {
 			cout << "쓰는 작업중. 복사본을 만들어야 한다." << endl;
+
+			// 버퍼 복사본
+			char *temp = new char[strlen(str.buf) + 1];
+			strcpy(temp, str.buf);
+
+			if (--(str.ref) == 0) {
+				delete[] str.buf;
+				delete str.ref;
+			}
+
+			str.buf = temp;
+			str.ref = new int(1);
+
 			str.buf[index] = c;
 			return *this;
 		}
