@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4일차_07_type_deduction",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_01_간접층의원리", "5일차_01_간접층의원리\5일차_01_간접층의원리.vcxproj", "{4A78299D-844C-4DA2-9A72-25FE5D9500B4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_02_STL_알고리즘", "5일차_02_STL_알고리즘\5일차_02_STL_알고리즘.vcxproj", "{1601EE30-7F14-4B09-BE1A-1AEAF9E591A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -213,6 +215,10 @@ Global
 		{4A78299D-844C-4DA2-9A72-25FE5D9500B4}.Debug|x86.Build.0 = Debug|Win32
 		{4A78299D-844C-4DA2-9A72-25FE5D9500B4}.Release|x86.ActiveCfg = Release|Win32
 		{4A78299D-844C-4DA2-9A72-25FE5D9500B4}.Release|x86.Build.0 = Release|Win32
+		{1601EE30-7F14-4B09-BE1A-1AEAF9E591A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{1601EE30-7F14-4B09-BE1A-1AEAF9E591A7}.Debug|x86.Build.0 = Debug|Win32
+		{1601EE30-7F14-4B09-BE1A-1AEAF9E591A7}.Release|x86.ActiveCfg = Release|Win32
+		{1601EE30-7F14-4B09-BE1A-1AEAF9E591A7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

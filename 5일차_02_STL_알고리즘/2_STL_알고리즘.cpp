@@ -11,7 +11,7 @@ char* xstrchr(char* s, char c) {
 int main() {
 	char s[] = "abcdefgh";
 
-	char* p = strchr(s, 'c');
+	char* p = xstrchr(s, 'c');
 
 	if (p == 0)
 		cout << "찾을 수 없습니다" << endl;
