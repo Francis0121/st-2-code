@@ -29,12 +29,29 @@ public:
 		cout << buf << endl;
 	}
 
+	// 문제를 해결하기 위해 새로운 요소를 도입한다.
+	// char 를 대신하는 요소를 만들자
+	class CharProxy {
+		String& str;
+		int index;
+	public:
+		CharProxy(String& s, int n) : str(s), index(n) {
+
+		}
+	};
+
+	// char 대신, CharProxy를 리턴한다.
+	CharProxy operator[](int index) {
+		cout << "operator[]" << endl;
+		return CharProxy(*this, index);
+	}
+
 	// [] 연산자 재정의 : 객체를 배열처럼 사용가능하게 한다.
 	// s[0] = 'a' 처럼 [] 호출이 lvalue에 오게 하려면 참조 리턴해야 한다.
-	char& operator[](int index) {
+	/*char& operator[](int index) {
 		cout << "operator[]" << endl;
 		return buf[index];
-	}
+	}*/
 	
 };
 
