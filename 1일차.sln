@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_02_STL_알고리즘
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_03_STL_컨테이너", "5일차_03_STL_컨테이너\5일차_03_STL_컨테이너.vcxproj", "{A284C11C-6358-43A5-BA2A-B0875B6882B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5일차_04_STL_반복자", "5일차_04_STL_반복자\5일차_04_STL_반복자.vcxproj", "{59350275-37DF-4209-9174-0C684155387B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -225,6 +227,10 @@ Global
 		{A284C11C-6358-43A5-BA2A-B0875B6882B2}.Debug|x86.Build.0 = Debug|Win32
 		{A284C11C-6358-43A5-BA2A-B0875B6882B2}.Release|x86.ActiveCfg = Release|Win32
 		{A284C11C-6358-43A5-BA2A-B0875B6882B2}.Release|x86.Build.0 = Release|Win32
+		{59350275-37DF-4209-9174-0C684155387B}.Debug|x86.ActiveCfg = Debug|Win32
+		{59350275-37DF-4209-9174-0C684155387B}.Debug|x86.Build.0 = Debug|Win32
+		{59350275-37DF-4209-9174-0C684155387B}.Release|x86.ActiveCfg = Release|Win32
+		{59350275-37DF-4209-9174-0C684155387B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
