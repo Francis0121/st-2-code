@@ -13,4 +13,8 @@ int main() {
 
 	cout << s2 << endl;
 
+	// )" 식별자이므로 "는 그냥 적으면 됩니다.
+	char s3[] = R"(C:\A"AA\B)";
+
+	cout << s3 << endl;
 }
