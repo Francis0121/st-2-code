@@ -45,5 +45,8 @@
     <ClCompile Include="8_override2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_templat_alias.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
