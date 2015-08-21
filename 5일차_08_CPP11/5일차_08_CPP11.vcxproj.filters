@@ -24,5 +24,11 @@
     <ClCompile Include="8_InitializerList2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_static_assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8_static_assert2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
