@@ -9,15 +9,16 @@ int& foo(int a, int& b) {
 	return g_x;
 }
 
-// 2. 참조인자를 가지는 함수도 생각해야 한다.
-//    가변인자를 unviersal reference로 받아야 한다
+// 3. 리턴 값도 돌려 주어야 한다.
 template<typename F, typename ... Types>
-void HowLong(F f, Types&& ... args) {
-	f(args...);
+decltype(auto) HowLong(F f, Types&& ... args) {
+	return f(args...);
 }
 
 int main() {
 	int x = 0;
-	HowLong(foo, 1, x);
+	auto& r = HowLong(foo, 1, x);
 	cout << x << endl;
+	r = 30;
+	cout << g_x << endl;
 }
