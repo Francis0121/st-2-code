@@ -35,8 +35,18 @@ public:
 		String& str;
 		int index;
 	public:
-		CharProxy(String& s, int n) : str(s), index(n) {
+		CharProxy(String& s, int n) : str(s), index(n) {}
+		// Proxy는 char로 변할 수 있어야 한다.
+		operator char() {
+			cout << "읽는 작업중, 복사본 필요 없다." << endl;
+			return str.buf[index];
+		}
 
+		// Proxy는 char을 대입 할 수 있어야 한다.
+		CharProxy& operator =(char c) {
+			cout << "쓰는 작업중. 복사본을 만들어야 한다." << endl;
+			str.buf[index] = c;
+			return *this;
 		}
 	};
 
