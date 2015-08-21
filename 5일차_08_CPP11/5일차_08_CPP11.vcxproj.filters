@@ -42,5 +42,8 @@
     <ClCompile Include="8_override.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8_override2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
