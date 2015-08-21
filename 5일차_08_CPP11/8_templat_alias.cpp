@@ -11,7 +11,9 @@
 using namespace std;
 template <typename T>
 class MyAlloc{};
+
 // C++ 11의 using은 template이 된다.
+// "template alias" 도는 "template typdef" 라는 이름을 가진 문법
 template<typename T>
 using MyVector = vector<T, MyAlloc<T>>;
 
