@@ -24,5 +24,8 @@
     <ClCompile Include="2_STL_알고리즘3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2_STL_알고리즘4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
